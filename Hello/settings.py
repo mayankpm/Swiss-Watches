@@ -105,11 +105,11 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.mysql',
-		'NAME': 'abc',
+		'NAME': 'railway',
 		'USER': 'root',
-		'PASSWORD': 'helloworld',
-		'HOST':'localhost',
-		'PORT':'3306',
+		'PASSWORD': 'Ae35DfhC-2a35G35fGB-1FB1cDHd4FD5',
+		'HOST':'roundhouse.proxy.rlwy.net',
+		'PORT':'54185',
 	}
 }
 
