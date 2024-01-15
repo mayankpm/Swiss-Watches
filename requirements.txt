@@ -5,7 +5,6 @@ asgiref==3.7.2
 asttokens==2.4.0
 astunparse==1.6.3
 backcall==0.2.0
-bcc
 blinker==1.7.0
 Brlapi==0.8.3
 cachetools==5.3.1
