@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import navSearchIcon from '../../assets/search.svg';
-import navCartIcon from '../../assets/cart.svg';
+import navCartIcon from '../../../public/cart.svg';
 
 const Testing = () => {
   // Initialize state with the current window width
