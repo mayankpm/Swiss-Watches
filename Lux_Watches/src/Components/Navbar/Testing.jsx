@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import navSearchIcon from '../../assets/search.svg';
+import navSearchIcon from '../../../public/search.svg';
 import navCartIcon from '../../../public/cart.svg';
 
 const Testing = () => {
