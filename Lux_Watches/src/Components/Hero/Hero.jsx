@@ -15,7 +15,7 @@ export default function Hero() {
     <div className="relative">
 
       {/* Importing Navbar with props */}
-      <Navbar navPosition={{position: 'absoulute'}} navTextStyle={{color: 'white'}} navBGColor='white' navIcon={{background: 'white'}} navCartIcon='public\cart.svg' navSearchIcon='src\assets\search.svg'/>
+      <Navbar navPosition={{position: 'absoulute'}} navTextStyle={{color: 'white'}} navBGColor='white' navIcon={{background: 'white'}} navCartIcon='cart.svg' navSearchIcon='src\assets\search.svg'/>
 
       <div className="video-container relative aspect-w-16 aspect-h-9">
       <video className="responsive-video w-full h-full lg:h-full object-cover z-1" src={vid1} type="video/mp4" autoPlay loop muted></video>
