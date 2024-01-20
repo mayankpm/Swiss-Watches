@@ -18,7 +18,7 @@ export default function Hero() {
       <Navbar navPosition={{position: 'absoulute'}} navTextStyle={{color: 'white'}} navBGColor='white' navIcon={{background: 'white'}} navCartIcon='cart.svg' navSearchIcon='search.svg'/>
 
       <div className="video-container relative aspect-w-16 aspect-h-9">
-      <video className="responsive-video w-full h-full lg:h-full object-cover z-1" src={vid1} type="video/mp4" autoPlay loop muted></video>
+      <video className="responsive-video w-full h-full lg:h-full object-cover z-1" src={vid1} type="video/mp4" autoPlay loop muted playsInline></video>
         <div className="absolute inset-24 flex flex-col items-center justify-center h-full text-center">
           <p className=" lg:py-0 decoration-slate-700 font-semibold tracking-widest lg:text-xs">
             <span className=''>NEW TAG HEUER MONACO CHRONOGRAPHS</span>
@@ -38,7 +38,7 @@ export default function Hero() {
       <Collections />
     
       <div className="video-container relative lg:w-full ">
-      <video className="responsive-video w-full max-h-fit" src={vid2} type="video/mp4" autoPlay loop muted></video>
+      <video className="responsive-video w-full max-h-fit" src={vid2} type="video/mp4" autoPlay loop muted playsInline></video>
         <div className="absolute inset-24 flex flex-col items-center justify-center h-full text-center">
           <p className=" lg:py-0 decoration-slate-700 font-semibold tracking-widest lg:text-xs">
             <span className=''>RICHARD MILLIE DIAMOND CUT CHRONOGRAPHS</span>
@@ -57,7 +57,7 @@ export default function Hero() {
       <Stories/>
       {/* GP */}
        <div className="video-container relative lg:w-full ">
-      <video className="responsive-video w-full max-h-fit" src={vid3} type="video/mp4" autoPlay loop muted></video>
+      <video className="responsive-video w-full max-h-fit" src={vid3} type="video/mp4" autoPlay loop muted playsInline></video>
         <div className="absolute inset-24 flex flex-col items-center justify-center h-full text-center">
           <p className=" lg:py-0 decoration-slate-700 font-semibold tracking-widest lg:text-xs">
             <span className=''>GIRARD PERREGAUX X ASTON MARTIN</span>
