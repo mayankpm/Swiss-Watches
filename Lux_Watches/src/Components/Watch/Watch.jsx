@@ -78,8 +78,8 @@ export default function Watch() {
         useEffect(() => {
             const fetchAllWatches = async () => {
                 try {
-                    const response = await axios.get('http://127.0.0.1:8000/auth/watches/');
-                    const userResponse = axios.get('http://127.0.0.1:8000/auth/hello');
+                    const response = await axios.get(import.meta.env.VITE_BACKEND_URL+"/auth/watches/");
+                    const userResponse = axios.get(import.meta.env.VITE_BACKEND_URL+"/auth/hello");
                     console.log("User response",userResponse.data);
                     setWatches(response.data);
                     console.log("All watches data received successfully:", response.data);

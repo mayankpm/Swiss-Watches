@@ -26,12 +26,12 @@ export default function Collections() {
           <div className="flex items-center justify-center bg-neutral-1000 m-20"> 
             {/* <div className="grid grid-cols-1 gap-7 md:grid-cols-3 lg:grid-cols-4"> */}
             <div className='flex gap-8'>
-              <Cards name='LAUREATO' pfp={img3} desc='qweretystsgsg'/>
-              <Cards name="CAT'S EYE" pfp={img4} desc='qweretystsgsg'/>
-              <Cards name='BRIDGES' pfp={img5} desc='qweretystsgsg'/>
-              <Cards name='1966' pfp={img6} desc='qweretystsgsg'/>
-              <Cards name='VINTAGE 1945' pfp={img1} desc='qweretystsgsg'/>
-              <Cards name='ALARM' pfp={img2} desc='qweretystsgsg'/>
+              <Cards name='LAUREATO' pfp={img3} />
+              <Cards name="CAT'S EYE" pfp={img4} />
+              <Cards name='BRIDGES' pfp={img5} />
+              <Cards name='1966' pfp={img6} />
+              <Cards name='VINTAGE 1945' pfp={img1} />
+              <Cards name='ALARM' pfp={img2} />
             </div>
           </div>   
       </motion.div>

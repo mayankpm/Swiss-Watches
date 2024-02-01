@@ -27,7 +27,7 @@ export default function Search({isOpen,closeSearch}) {
     useEffect(() => {
         const fetchSearchResults = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:8000/auth/watches/?search=${query}`);
+                const response = await fetch(import.meta.env.VITE_BACKEND_URL+`/auth/watches/?search=${query}`);
                 if (response.ok) {
                     const data = await response.json();
                     setSearchResults(data);
