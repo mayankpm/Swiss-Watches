@@ -5,7 +5,7 @@ import navCartIcon from '../../../public/cart.svg';
 const Testing = () => {
   // Initialize state with the current window width
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
-
+  console.log(import.meta.env.VITE_BACKEND_URL)
   // Effect to add and remove the resize event listener
   useEffect(() => {
     const handleResize = () => {

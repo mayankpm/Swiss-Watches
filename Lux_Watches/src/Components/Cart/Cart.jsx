@@ -15,8 +15,8 @@ export default function Cart() {
   useEffect(() => {
     const fetchCartAndWatches = async () => {
       try {
-        const cartResponse = await axios.get('http://127.0.0.1:8000/auth/cart/');  //get cart information
-        const watchesResponse = await axios.get('http://127.0.0.1:8000/auth/watches/');  //get watch information
+        const cartResponse = await axios.get(import.meta.env.VITE_BACKEND_URL+"/auth/cart/");  //get cart information
+        const watchesResponse = await axios.get(import.meta.env.VITE_BACKEND_URL+"/auth/watches/");  //get watch information
 
 
         const watchIds = cartResponse.data.map(item => item.watch_id).filter(id => typeof id === 'number');  //fetch watch ids

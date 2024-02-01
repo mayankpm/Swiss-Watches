@@ -47,10 +47,10 @@ import {ap_1159_h, cactus_jack_h, royaloak_perpetual_h, carrera_date_h, carrera_
 export default function CardsCollection() {
   const [watches, setWatches] = useState([]);
   const navigate = useNavigate();
-
+import.meta.env.VITE_BACKEND_URL
   const fetchWatches = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/auth/watches/");
+      const response = await axios.get(import.meta.env.VITE_BACKEND_URL + "/auth/watches/");
       setWatches(response.data);
       console.log("Watch data received successfully:", response.data);
     } catch (error) {
