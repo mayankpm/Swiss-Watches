@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { SpeedInsights } from '@vercel/speed-insights'
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Card from "./Card"; // Assuming you have a Card component
@@ -66,6 +67,29 @@ import.meta.env.VITE_BACKEND_URL
     navigate('/watch', { state: { id: watch.id } });
   };
 
+  const [loading,setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const responese = await axios.get(import.meta.env.VITE_BACKEND_URL + "/auth/watches/");
+        setWatches(responese.data);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching watch data:", error);
+        console.error("Error details:", error.response.data);
+        setLoading(false);
+      }
+    };
+    fetchData();
+
+  }, [import.meta.env.VITE_BACKEND_URL]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+
   return (
     <div>
       <button onClick={clearWatches}>Clear Watches</button>
@@ -78,6 +102,7 @@ import.meta.env.VITE_BACKEND_URL
           </div>
         ))}
       </div>
+      <SpeedInsights/>
     </div>
   );
 }
