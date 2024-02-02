@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { SpeedInsights } from '@vercel/speed-insights'
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Card from "./Card"; // Assuming you have a Card component
@@ -77,6 +78,7 @@ export default function CardsCollection() {
           </div>
         ))}
       </div>
+      <SpeedInsights/>
     </div>
   );
 }
