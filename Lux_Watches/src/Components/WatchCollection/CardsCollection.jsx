@@ -10,7 +10,6 @@ import {ap_1159_h, cactus_jack_h, royaloak_perpetual_h, carrera_date_h, carrera_
 export default function CardsCollection() {
   const [watches, setWatches] = useState([]);
   const navigate = useNavigate();
-import.meta.env.VITE_BACKEND_URL
   const fetchWatches = async () => {
     try {
       const response = await axios.get(import.meta.env.VITE_BACKEND_URL + "/auth/watches/");
@@ -29,7 +28,7 @@ import.meta.env.VITE_BACKEND_URL
 
   useEffect(() => {
     fetchWatches();
-  }, []);
+  }, [import.meta.env.VITE_BACKEND_URL]);
 
   const nameToVariableMap = {
     "Code 11.59 by Audemars Piguet": ap_1159,
