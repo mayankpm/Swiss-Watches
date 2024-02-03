@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { SpeedInsights } from '@vercel/speed-insights'
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from "axios";
 import './Watch.css';
@@ -210,7 +209,6 @@ export default function Watch() {
                 <p className='desc-header'>Description</p>
                 <p className='desc-contents'>{watchDetails['more_description']}</p>
             </div>
-            <SpeedInsights/>
         </>
     );
 }
