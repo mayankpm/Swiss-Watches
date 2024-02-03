@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { SpeedInsights } from '@vercel/speed-insights'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './Cart.css';
@@ -127,7 +126,6 @@ export default function Cart() {
           </div>
         </div>
       </div>
-      <SpeedInsights/>
     </>
   );
 }

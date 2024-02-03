@@ -1,5 +1,4 @@
 import React from 'react';
-import { SpeedInsights } from '@vercel/speed-insights'
 import Navbar from '../Navbar/Navbar'
 import Celeb from '../Celeb/Celeb'
 import Footer from '../Footer/Footer'
@@ -80,8 +79,6 @@ export default function Hero() {
       <Celeb/>
 
       <Footer/>
-
-      <SpeedInsights/>
     </div>
   );
 }
