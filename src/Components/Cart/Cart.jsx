@@ -11,7 +11,10 @@ export default function Cart() {
   const [isAllDeleted, setAllDeleted] = useState(false);
 
   const navigate = useNavigate();
-  
+  const navigateToCheckout = () =>{
+    console.log('buttonClick')
+    navigate('/checkout');
+  }
   useEffect(() => {
     const fetchCartAndWatches = async () => {
       try {
@@ -122,7 +125,7 @@ export default function Cart() {
             <div className='subtotal mb-2'>
               Total: {`$${finalPrice}`}
             </div>
-            <button className='order'>Checkout</button>
+            <button className='order' onclick={navigateToCheckout}>Checkout</button>
           </div>
         </div>
       </div>
