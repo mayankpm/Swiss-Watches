@@ -2,7 +2,7 @@ import React from 'react';
 
 // If you have header and footer components, import them as well
 // import Header from './Header';
-// import Footer from './Footer';
+import Footer from '../Footer/Footer';
 
 export default function OrderPlaced() {
   return (
@@ -10,12 +10,12 @@ export default function OrderPlaced() {
       {/* Render Header Component Here if available */}
       {/* <Header /> */}
       
-      <div id="orderContainer">
+      <div id="order-container">
         <div id="check">
-          <FontAwesomeIcon icon={faCheckCircle} size="2x" />
+          {/* <FontAwesomeIcon icon={faCheckCircle} size="2x" /> */}
         </div>
         
-        <div id="aboutCheck">
+        <div id="about-check mt-8">
           <h1> Order Placed Successfully! </h1>
           <p> We've sent you an email with the Order details. </p>
         </div>

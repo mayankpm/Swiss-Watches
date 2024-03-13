@@ -12,7 +12,7 @@ export default function Cart() {
 
   const navigate = useNavigate();
   const navigateToCheckout = () =>{
-    console.log('buttonClick')
+    console.log('Button Clicked')
     navigate('/checkout');
   }
   useEffect(() => {
@@ -125,7 +125,7 @@ export default function Cart() {
             <div className='subtotal mb-2'>
               Total: {`$${finalPrice}`}
             </div>
-            <button className='order' onclick={navigateToCheckout}>Checkout</button>
+            <button className='order' onClick={navigateToCheckout}>Checkout</button>
           </div>
         </div>
       </div>
